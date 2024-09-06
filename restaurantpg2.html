@@ -1,0 +1,23 @@
+<html>
+  <head>
+    <link href="restaurant.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+    <script src="restaurant.js"></script>
+  </head>
+  <body>
+    <center>
+      <div id = "header">
+        <h1>Thank You!</h1>
+      </div>
+      <div id = "order">
+        <button onclick = "showreceipt()" class="buttons">~ Show Receipt ~</button>
+        <p id = "everything" style="font-size: 16px"></p>
+        <button onclick = "total()" class="buttons">~ Show Total ~</button>
+        <p id = "totall"></p>
+        <input type ="number" id="tip">
+        <button onclick = "tipplease()" class="buttons">Tip?</button>
+        <p id = "finalamount"></p>
+      </div>
+  </center>
+  </body>
+</html>

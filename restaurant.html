@@ -1,0 +1,75 @@
+<html>
+  <head>
+    <link href="restaurant.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <center>
+      <div id = "header">
+        <h1>Welcome!</h1>
+      </div>
+      <div id = "bg">
+        <div class = "item">
+          <img src = "anpan.jpg" width="90%">
+          <h2>Red Bean Bun</h2>
+          <p>$1.70</p>
+          <input type ="number" id="order1">
+          <button onclick = "redbeanbun()" class="buttons">Add to Order</button>
+        </div>
+        <div class = "item">
+          <img src = "melonpan.png" width="90%">
+          <h2>Melon Bun</h2>
+          <p>$1.70</p>
+          <input type ="number" id="order2">
+          <button onclick = "melonbun()" class="buttons">Add to Order</button>
+        </div>
+        <div class = "item">
+          <img src = "choconet.jpg" width="90%">
+          <h2>Chocolate Cornet</h2>
+          <p>$2.50</p>
+          <input type ="number" id="order3">
+          <button onclick = "chocolatecornet()" class="buttons">Add to Order</button>
+        </div>
+        <div class = "item">
+          <img src = "applestrudel.jpg" width="90%">
+          <h2>Apple Strudel</h2>
+          <p>$2.50</p>
+          <input type ="number" id="order4">
+          <button onclick = "applestrudel()" class="buttons">Add to Order</button>
+        </div>
+        <div class = "item">
+          <img src = "cinnamonroll.jpg" width="90%">
+          <h2>Cinnamon Roll</h2>
+          <p>$3.10</p>
+          <input type ="number" id="order5">
+          <button onclick = "cinnamonroll()" class="buttons">Add to Order</button>
+        </div>
+        <div class = "item">
+          <img src = "donuts.jpg" width="90%">
+          <h2>Donuts</h2>
+          <p>$1.70</p>
+          <input type ="number" id="order6">
+          <button onclick = "donuts()" class="buttons">Add to Order</button>
+        </div>
+      </div>
+      </center>
+      <div id = "runningorder">
+        <center>
+          <h2>Running Order</h2>
+          <p id = "invalid"></p>
+          <p id = "ord1"></p>
+          <p id = "ord2"></p>
+          <p id = "ord3"></p>
+          <p id = "ord4"></p>
+          <p id = "ord5"></p>
+          <p id = "ord6"></p>
+          <button onclick = "runningtotal()" class="buttons">Display Running Total</button>
+          <p id = "price"></p>
+          <button onclick = "runningtotaltax()" class="buttons">Display Running Total with Tax</button>
+          <p id = "tax"></p>
+          <button onclick = "finalize()" class="buttons">Finalize</button>
+        </center>
+      </div>
+      <script src="restaurant.js"></script>
+  </body>
+</html>
